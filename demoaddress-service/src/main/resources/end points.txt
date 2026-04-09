@@ -1,0 +1,16 @@
+
+old curl -X GET --location "http://localhost:8080/api/v1/employees/2"
+
+curl -X GET --location "http://localhost:8080/demoemployee/employees/1"
+
+curl -X GET --location "http://localhost:8080/demoemployee/employees/1"
+
+curl -X GET --location "http://localhost:8081/demoaddress-service/address/2"
+
+curl -X GET --location "http://localhost:8081/demoaddress-service/addressId/2"
+
+---> all employee   
+curl -X GET --location "http://localhost:8080/demoemployee/api/v1/employees"
+
+********   two services communicating ****
+curl -X GET --location "http://localhost:8080/demoemployee/employees/1"
