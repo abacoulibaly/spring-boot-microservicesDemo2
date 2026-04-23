@@ -25,7 +25,8 @@ public class EmployeeController {
 
     @Autowired
    // private EmployeeService employeeService;
-    private EmployeeServiceRestTemplate employeeService;  // to use RestTemplate
+    private EmployeeServiceRestTemplate employeeService;  // to use RestTemplate ** Synchronous client to perform HTTP requests, 
+         //exposing a simple, template  method API over underlying HTTP client libraries such as the JDK **/
 
     @GetMapping("/employees/{id}")
     private ResponseEntity<EmployeeResponse> getEmployeeDetails(@PathVariable("id") int id) {
