@@ -2,6 +2,9 @@
 pipeline {
     // Run this pipeline on any available agent/node
     agent any 
+    tools {
+        maven 'MAVEN_HOME'
+    }
 
     // Global environment variables accessible across all stages
     environment {
