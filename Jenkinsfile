@@ -2,7 +2,7 @@
 pipeline {
     // Run this pipeline on any available agent/node
     agent any 
-    tools {
+     {
         Maven 
     }
 
