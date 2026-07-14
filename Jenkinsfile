@@ -1,7 +1,7 @@
 
 pipeline {
     // Run this pipeline on any available agent/node
-    agent any 
+    //agent any 
 
     agent { docker { image 'maven:3.9-eclipse-temurin-17' } }
 
