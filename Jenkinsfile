@@ -3,11 +3,7 @@ pipeline {
     // Run this pipeline on any available agent/node
     agent any 
 
-    // Global environment variables accessible across all stages
-    environment {
-        APP_NAME = 'my-node-app'
-        DEPLOY_ENV = 'staging'
-    }
+    agent { docker { image 'maven:3.9-eclipse-temurin-17' } }
 
     // Define all the pipeline phases inside the stages block
     stages {
